@@ -1,4 +1,9 @@
-class PaymentFactory {
+import IPayment from "./IPayment";
+import UpiPayment from "./UpiPayment";
+import CardPayment from "./CardPayment";
+import WalletPayment from "./WalletPayment";
+
+export default class PaymentFactory {
   static createPayment(method: string): IPayment {
     switch (method) {
       case "UPI":
