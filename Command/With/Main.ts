@@ -80,7 +80,7 @@ const placeButton = new UIInvoker(placeOrder);
 placeButton.click();
 
 const trackButton = new UIInvoker(trackOrder);
-placeButton.click();
+trackButton.click();
 
 const cancelButton = new UIInvoker(cancelOrder);
-placeButton.click();
+cancelButton.click();
