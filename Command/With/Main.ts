@@ -70,12 +70,12 @@ class UIInvoker {
 // receiver is created where actual business logic is implemented
 const swiggyOrderService = new OrderService();
 
-// concrete commands are created and passed the receiver
+// concrete commands are created and the receiver is passed in these commands
 const placeOrder = new PlaceOrderCommand(swiggyOrderService);
 const trackOrder = new TrackOrderCommand(swiggyOrderService);
 const cancelOrder = new CancelOrderCommand(swiggyOrderService);
 
-// invokers are created and passed the command objects
+// invokers are created and the command objects are passed to the invokers
 const placeButton = new UIInvoker(placeOrder);
 placeButton.click();
 
