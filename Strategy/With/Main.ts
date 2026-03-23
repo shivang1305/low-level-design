@@ -36,6 +36,7 @@ class PaymentService {
   }
 }
 
+// PROBLEM: tight coupling between client and payment strategies
 const paymentService = new PaymentService(new UpiPayment());
 paymentService.pay(200);
 
