@@ -77,8 +77,8 @@ pizza = new ExtraToppingsDecorator(pizza, 30);
 burger = new ExtraSauceDecorator(burger, 20);
 burger = new ExtraCheeseDecorator(burger, 30);
 
-console.log(pizza.getDescription()); // Pizza with extra cheese
-console.log(pizza.getPrice()); // 250
+console.log(pizza.getDescription()); // Pizza with extra cheese with extra toppings
+console.log(pizza.getPrice()); // 280
 
-console.log(burger.getDescription()); // Burger with extra sauce
-console.log(burger.getPrice()); // 120
+console.log(burger.getDescription()); // Burger with extra sauce with extra cheese
+console.log(burger.getPrice()); // 150
